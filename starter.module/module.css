@@ -89,6 +89,8 @@
   object-fit: cover;
 } */
 
+
+
 .starter__gallery .starter__image--top {
   grid-column: 1 / -1;
 }
