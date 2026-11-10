@@ -1,0 +1,28 @@
+<section class="starter starter--padding-top-{{ module.padding_top }} starter--padding-bottom-{{ module.padding_bottom }} starter--padding-bottom-{{ module.padding_none }}" style="{% if module.switch_side %}flex-direction: row-reverse;{% endif %}">
+  <div class="starter__inner width_50" >
+    {% if module.text.show_heading %}
+      <h2 class="starter__heading">{{ module.text.heading_text }}</h2>
+      <div class="starter__description">{{ module.text.description }}</div>
+      <a href="{{ module.text.button.button_link }}" class="starter__button">{{ module.text.button.button_text }}</a>
+    {% endif %}
+  </div>
+  <div class="width_50 ">
+    <div class="width_50 starter__gallery">
+  <img
+    src="{{ module.image_group.image_top.src }}"
+    alt="{{ module.image_group.image_top.alt }}"
+    class="starter__image starter__image--top"
+  />
+  <img
+    src="{{ module.image_group.image_bottom_left.src }}"
+    alt="{{ module.image_group.image_bottom_left.alt }}"
+    class="starter__image"
+  />
+  <img
+    src="{{ module.image_group.image_bottom_right.src }}"
+    alt="{{ module.image_group.image_bottom_right.alt }}"
+    class="starter__image"
+  />
+</div>
+  </div>
+</section>

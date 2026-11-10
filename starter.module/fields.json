@@ -1,0 +1,320 @@
+[
+ {
+  "default": false,
+  "display": "toggle",
+  "display_width": null,
+  "id": "a146e117-68db-e6c3-a4c9-02e480b178c3",
+  "label": "Switch Side",
+  "locked": false,
+  "name": "switch_side",
+  "required": false,
+  "type": "boolean"
+ },
+ {
+  "choices": [
+   [
+    "64",
+    "Medium"
+   ],
+   [
+    "96",
+    "Large"
+   ],
+   [
+    "none",
+    "None"
+   ]
+  ],
+  "display": "select",
+  "display_width": null,
+  "id": "9a763d7e-e91c-66fe-d73c-98b4215bf412",
+  "label": "Padding Top",
+  "locked": false,
+  "multiple": false,
+  "name": "padding_top",
+  "preset": null,
+  "reordering_enabled": true,
+  "required": false,
+  "type": "choice"
+ },
+ {
+  "choices": [
+   [
+    "64",
+    "Medium"
+   ],
+   [
+    "96",
+    "Large"
+   ],
+   [
+    "none",
+    "None"
+   ]
+  ],
+  "display": "select",
+  "display_width": null,
+  "id": "52ec3f15-1196-d568-6a3c-86e8ed0a4a89",
+  "label": "Padding Bottom",
+  "locked": false,
+  "multiple": false,
+  "name": "padding_bottom",
+  "preset": null,
+  "reordering_enabled": true,
+  "required": false,
+  "type": "choice"
+ },
+ {
+  "children": [
+   {
+    "default": true,
+    "display": "toggle",
+    "display_width": null,
+    "id": "914d353e-ed54-da74-40fa-f765781683a8",
+    "label": "Show Heading",
+    "locked": false,
+    "name": "show_heading",
+    "required": false,
+    "type": "boolean"
+   },
+   {
+    "allow_new_line": false,
+    "default": "Hello from HubSpot",
+    "display_width": null,
+    "id": "text.heading_text",
+    "label": "Heading Text",
+    "locked": false,
+    "name": "heading_text",
+    "required": false,
+    "type": "text",
+    "visibility": {
+     "controlling_field_path": "text.show_heading",
+     "controlling_value_regex": "true",
+     "operator": "EQUAL"
+    }
+   },
+   {
+    "default": "<p>This is a starter module. Edit the text in the sidebar.</p>",
+    "display_width": null,
+    "id": "text.description",
+    "label": "Description",
+    "locked": false,
+    "name": "description",
+    "required": false,
+    "type": "richtext",
+    "visibility": {
+     "controlling_field_path": "text.show_heading",
+     "controlling_value_regex": "true",
+     "operator": "EQUAL"
+    }
+   },
+   {
+    "children": [
+     {
+      "allow_new_line": false,
+      "default": "Button ",
+      "display_width": null,
+      "id": "bf1453be-db34-b0cb-5321-6f95db8de250",
+      "label": "Button Text",
+      "locked": false,
+      "name": "button_text",
+      "placeholder": "Button",
+      "required": false,
+      "type": "text"
+     },
+     {
+      "default": {
+       "url": {
+        "content_id": null,
+        "type": "EXTERNAL",
+        "href": ""
+       },
+       "open_in_new_tab": false,
+       "no_follow": false
+      },
+      "display_width": null,
+      "id": "baee9953-1421-3c88-def7-9bfb3e3d2ea9",
+      "label": "Link",
+      "locked": false,
+      "name": "link_field",
+      "required": false,
+      "show_advanced_rel_options": false,
+      "supported_types": [
+       "EXTERNAL",
+       "CONTENT",
+       "FILE",
+       "EMAIL_ADDRESS",
+       "BLOG",
+       "CALL_TO_ACTION",
+       "PHONE_NUMBER",
+       "WHATSAPP_NUMBER",
+       "PAYMENT"
+      ],
+      "type": "link"
+     }
+    ],
+    "default": {
+     "button_text": "Button ",
+     "link_field": {
+      "url": {
+       "content_id": null,
+       "type": "EXTERNAL",
+       "href": ""
+      },
+      "open_in_new_tab": false,
+      "no_follow": false
+     }
+    },
+    "display_width": null,
+    "expanded": false,
+    "group_occurrence_meta": null,
+    "id": "ee64d935-dd68-9114-ed21-50c17cd56eaf",
+    "label": "Button",
+    "locked": false,
+    "name": "button",
+    "required": false,
+    "tab": "CONTENT",
+    "type": "group"
+   }
+  ],
+  "default": {
+   "show_heading": true,
+   "heading_text": "Hello from HubSpot",
+   "description": "<p>This is a starter module. Edit the text in the sidebar.</p>",
+   "button": {
+    "button_text": "Button ",
+    "link_field": {
+     "url": {
+      "content_id": null,
+      "type": "EXTERNAL",
+      "href": ""
+     },
+     "open_in_new_tab": false,
+     "no_follow": false
+    }
+   }
+  },
+  "display_width": null,
+  "expanded": false,
+  "group_occurrence_meta": null,
+  "id": "text",
+  "label": "Text",
+  "locked": false,
+  "name": "text",
+  "required": false,
+  "tab": "CONTENT",
+  "type": "group"
+ },
+ {
+  "children": [
+   {
+    "default": {
+     "size_type": "auto",
+     "src": "https://147752436.fs1.hubspotusercontent-eu1.net/hubfs/147752436/leadfront-2026/ai-city-1.jpg",
+     "alt": "ai-city-1",
+     "loading": "lazy",
+     "width": 1400,
+     "height": 1400,
+     "max_width": 1400,
+     "max_height": 1400
+    },
+    "display_width": null,
+    "id": "d69ba86f-74f6-4903-559d-01608652ea08",
+    "label": "Image Top",
+    "locked": false,
+    "name": "image_top",
+    "required": false,
+    "resizable": true,
+    "responsive": true,
+    "show_loading": false,
+    "type": "image"
+   },
+   {
+    "default": {
+     "size_type": "auto",
+     "src": "https://147752436.fs1.hubspotusercontent-eu1.net/hubfs/147752436/leadfront-2026/ai-city-1.jpg",
+     "alt": "ai-city-1",
+     "loading": "lazy",
+     "width": 1400,
+     "height": 1400,
+     "max_width": 1400,
+     "max_height": 1400
+    },
+    "display_width": null,
+    "id": "d9ed4db7-3579-48d8-6189-147f47d06110",
+    "label": "Image Bottom Left",
+    "locked": false,
+    "name": "image_bottom_left",
+    "required": false,
+    "resizable": true,
+    "responsive": true,
+    "show_loading": false,
+    "type": "image"
+   },
+   {
+    "default": {
+     "size_type": "auto",
+     "src": "https://147752436.fs1.hubspotusercontent-eu1.net/hubfs/147752436/leadfront-2026/ai-city-1.jpg",
+     "alt": "ai-city-1",
+     "loading": "lazy",
+     "width": 1400,
+     "height": 1400,
+     "max_width": 1400,
+     "max_height": 1400
+    },
+    "display_width": null,
+    "id": "c260222c-44ad-0ff7-0a69-5b6d6e004a58",
+    "label": "Image Bottom Right",
+    "locked": false,
+    "name": "image_bottom_right",
+    "required": false,
+    "resizable": true,
+    "responsive": true,
+    "show_loading": false,
+    "type": "image"
+   }
+  ],
+  "default": {
+   "image_top": {
+    "size_type": "auto",
+    "src": "https://147752436.fs1.hubspotusercontent-eu1.net/hubfs/147752436/leadfront-2026/ai-city-1.jpg",
+    "alt": "ai-city-1",
+    "loading": "lazy",
+    "width": 1400,
+    "height": 1400,
+    "max_width": 1400,
+    "max_height": 1400
+   },
+   "image_bottom_left": {
+    "size_type": "auto",
+    "src": "https://147752436.fs1.hubspotusercontent-eu1.net/hubfs/147752436/leadfront-2026/ai-city-1.jpg",
+    "alt": "ai-city-1",
+    "loading": "lazy",
+    "width": 1400,
+    "height": 1400,
+    "max_width": 1400,
+    "max_height": 1400
+   },
+   "image_bottom_right": {
+    "size_type": "auto",
+    "src": "https://147752436.fs1.hubspotusercontent-eu1.net/hubfs/147752436/leadfront-2026/ai-city-1.jpg",
+    "alt": "ai-city-1",
+    "loading": "lazy",
+    "width": 1400,
+    "height": 1400,
+    "max_width": 1400,
+    "max_height": 1400
+   }
+  },
+  "display_width": null,
+  "expanded": false,
+  "group_occurrence_meta": null,
+  "id": "b76c40e5-e14d-b8b0-6951-b54d4d0ac448",
+  "label": "Image Group",
+  "locked": false,
+  "name": "image_group",
+  "required": false,
+  "tab": "CONTENT",
+  "type": "group"
+ }
+]
